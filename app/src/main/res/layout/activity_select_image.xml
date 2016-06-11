@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="Please Select the pictures you like"
+        android:id="@+id/selectTextview"
+        android:layout_centerHorizontal="true" />
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:columnWidth="100dp"
+        android:numColumns="2"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="8dp"
+        android:stretchMode="spacingWidthUniform"
+        android:gravity="center"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="150dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="42dp"
+        android:text="Submit"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/my_button"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>
+

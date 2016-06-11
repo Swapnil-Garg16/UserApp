@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.houssup.userapp"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+
+
+
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.github.championswimmer:Android-SocialButtons:1.0'
+    compile 'com.github.hanks-zyh:AnimateCheckBox:2b54d38bc7'
+    compile 'com.makeramen:roundedimageview:2.2.1'
+    compile 'com.github.lzyzsd:circleprogress:1.1.0@aar'
+    compile 'com.github.bluejamesbond:textjustify-android:2.1.6'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.github.techery:ProperRatingBar:0.0.4'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.github.jaydeepw:poly-picker:v1.0.22'
+}

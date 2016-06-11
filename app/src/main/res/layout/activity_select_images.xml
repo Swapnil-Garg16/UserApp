@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="Please Select the pictures you like"
+        android:id="@+id/selectTextview"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:id="@+id/scrollView"
+        android:scrollbarSize="50dp"
+        android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+        android:layout_below="@+id/selectTextview"
+        android:layout_marginTop="10dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_above="@+id/submit"
+            android:layout_below="@+id/scrollView">
+
+            <ImageView android:id="@+id/thumbImage1"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_alignParentTop="true"
+                android:clickable="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/pic_five"
+                android:adjustViewBounds="true" />
+
+            <com.hanks.library.AnimateCheckBox
+                android:id="@+id/itemCheckBox"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:checkedColor="#e9b200"
+                app:lineColor="#e9b200"
+                android:visibility="gone"
+                app:unCheckColor="@android:color/transparent"
+                android:layout_below="@+id/itemCheckBox3"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="70dp"
+                android:background="#e9b200"
+                />
+
+            <ImageView android:id="@+id/thumbImage2"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/pic_five"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:layout_toRightOf="@+id/thumbImage1"
+                android:layout_toEndOf="@+id/thumbImage1" />
+
+            <CheckBox android:id="@+id/itemCheckBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_alignTop="@+id/itemCheckBox"
+                android:layout_alignRight="@+id/thumbImage2"
+                android:layout_alignEnd="@+id/thumbImage2"
+                android:layout_marginRight="61dp"
+                android:layout_marginEnd="61dp" />
+
+            <ImageView android:id="@+id/thumbImage3"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="@drawable/pic_five"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:layout_below="@+id/thumbImage1"/>
+
+            <CheckBox android:id="@+id/itemCheckBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_alignTop="@+id/thumbImage3"
+                android:layout_alignLeft="@+id/itemCheckBox"
+                android:layout_alignStart="@+id/itemCheckBox"
+                android:layout_marginTop="61dp" />
+
+
+            <ImageView android:id="@+id/thumbImage4"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="@drawable/pic_five"
+                android:adjustViewBounds="true"
+                android:layout_toRightOf="@+id/thumbImage3"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:layout_below="@+id/thumbImage2"/>
+
+            <CheckBox android:id="@+id/itemCheckBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_alignTop="@+id/itemCheckBox3"
+                android:layout_alignLeft="@+id/itemCheckBox2"
+                android:layout_alignStart="@+id/itemCheckBox2" />
+
+
+            <ImageView android:id="@+id/thumbImage5"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="@drawable/pic_five"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@+id/thumbImage3"/>
+
+
+            <CheckBox android:id="@+id/itemCheckBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_alignTop="@+id/thumbImage5"
+                android:visibility="gone"
+                android:layout_alignLeft="@+id/itemCheckBox3"
+                android:layout_alignStart="@+id/itemCheckBox3"
+                android:layout_marginTop="63dp" />
+
+
+            <ImageView android:id="@+id/thumbImage6"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="@drawable/pic_five"
+                android:adjustViewBounds="true"
+                android:layout_below="@+id/thumbImage4"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:layout_alignLeft="@+id/thumbImage4"
+                android:layout_alignStart="@+id/thumbImage4" />
+
+
+            <CheckBox android:id="@+id/itemCheckBox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_alignTop="@+id/itemCheckBox5"
+                android:layout_alignLeft="@+id/itemCheckBox4"
+                android:layout_alignStart="@+id/itemCheckBox4" />
+
+
+            <ImageView android:id="@+id/thumbImage7"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pic_five"
+                android:clickable="true"
+                android:adjustViewBounds="true"
+                android:layout_below="@+id/thumbImage5"
+                />
+
+
+            <CheckBox android:id="@+id/itemCheckBox7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:visibility="gone"
+                android:layout_alignLeft="@+id/itemCheckBox3"
+                android:layout_alignStart="@+id/itemCheckBox3"
+                android:layout_alignTop="@+id/thumbImage7" />
+
+            <ImageView android:id="@+id/thumbImage8"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#25262a"
+                android:adjustViewBounds="true"
+                android:layout_toRightOf="@+id/thumbImage7"
+                android:layout_below="@+id/thumbImage6"
+                android:clickable="true"
+                />
+
+            >
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="   Upload Pictures from"
+                android:drawableTop="@drawable/add"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignTop="@+id/itemCheckBox7"
+                android:textColor="#ffffff"
+                android:layout_alignLeft="@+id/thumbImage8"
+                android:layout_alignStart="@+id/thumbImage8" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Phone Gallery"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/text"
+                android:layout_marginTop="118dp"
+                android:layout_marginLeft="35dp"
+                android:layout_alignTop="@+id/itemCheckBox7"
+                android:layout_alignLeft="@+id/thumbImage8"
+                android:layout_alignStart="@+id/thumbImage8"
+                android:id="@+id/textView4" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:text="Submit"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/my_button"
+        android:layout_gravity="center_horizontal" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#383838"
+    tools:context="com.houssup.userapp.HomeActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearlaylout"
+    android:orientation="horizontal">
+    <com.hanks.library.AnimateCheckBox
+        android:id="@+id/itemCheckBox"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:checkedColor="#00ff00"
+        app:lineColor="#ffffff"
+        android:checked="true"
+        android:layout_below="@+id/itemCheckBox3"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="70dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp"
+        android:text="Photos Updated Succesfully"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_below="@+id/linearlaylout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout_Buttons"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Go To Profile"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/my_button"
+            />
+        <Button
+            android:id="@+id/designHome"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Design Your Home"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:background="@drawable/mybutton_design"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/registerDesigner"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="Register as a designer"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/mybutton_register"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:background="@drawable/arrow"
+        android:layout_below="@+id/linearlaylout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp" />
+</RelativeLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.houssup.userapp.QuestionOneActivity">
+
+    <LinearLayout
+        android:id="@+id/linearlaylout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/backButton"
+        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/back"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We'll start by asking youfew simple"
+        android:textSize="16dp"
+        android:layout_alignTop="@+id/backButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_gravity="center_horizontal"
+        android:text="questions to know your taste"/>
+</LinearLayout>
+</LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:textColor="#e9b200"
+            android:textSize="24dp"
+            android:text="Question"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32dp"
+            android:textColor="#e9b200"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:text="1/10"/>
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_below="@+id/linearlaylout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="left"
+            android:text="1. What is the space you want to design ?"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="50dp"
+        android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+        android:layout_below="@+id/question">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                card_view:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@+id/imageOne"
+                        android:cropToPadding="true"
+                        android:scaleType="centerCrop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/pic_two"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_below="@+id/imageOne"
+                        android:text="LIVING ROOM"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                card_view:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@+id/imageTwo"
+                        android:cropToPadding="true"
+                        android:scaleType="centerCrop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/pic_two"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="LIVING ROOM"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                card_view:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@+id/imageThree"
+                        android:cropToPadding="true"
+                        android:scaleType="centerCrop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/pic_two"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="LIVING ROOM"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view4"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                card_view:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@+id/imageFour"
+                        android:cropToPadding="true"
+                        android:scaleType="centerCrop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        android:background="#ffffff"
+                        android:src="@drawable/pic_two"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="LIVING ROOM"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="100dp"
+                android:paddingRight="100dp"
+                android:layout_gravity="center_horizontal"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:background="@drawable/my_button"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
